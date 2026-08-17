@@ -24,6 +24,6 @@ COPY --from=build /tmp/build/ /
 
 VOLUME /tmp
 
-USER 1000
+USER 1
 
 ENTRYPOINT ["/usr/sbin/squid-openssl", "-N"]
