@@ -1,6 +1,6 @@
 FROM ghcr.io/mihaiush/build:26.1027.44 AS build
 
-# renovate: datasource=deb depName=squid-openssl registryUrl=https://deb.debian.org/debian?suite=testing&components=main&binaryArch=amd64
+# renovate-regex: datasource=deb packageName=squid-openssl registryUrl=https://deb.debian.org/debian?suite=testing&components=main&binaryArch=amd64
 ENV SQUID_VERSION="7.7-1"
 
 RUN \
